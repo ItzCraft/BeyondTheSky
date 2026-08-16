@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://2i7kcp1yrbvv"]
+
+[ext_resource type="Script" uid="uid://r2w7ub85m3bt" path="res://scripts/hungerComponent.gd" id="1_ye1nv"]
+
+[node name="HungerComponent" type="Node"]
+script = ExtResource("1_ye1nv")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 60.0
+autostart = true

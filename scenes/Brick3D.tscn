@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjom2gr3wnlp8"]
+
+[ext_resource type="Script" uid="uid://dqd04y47d2yty" path="res://scripts/brick_3d.gd" id="1_c8pmn"]
+[ext_resource type="Script" uid="uid://ugwmvyltdgn8" path="res://scripts/player/inventory/items/BrickItem.gd" id="2_nsb83"]
+
+[sub_resource type="Resource" id="Resource_m2u2t"]
+script = ExtResource("2_nsb83")
+metadata/_custom_type_script = "uid://ugwmvyltdgn8"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c8pmn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nsb83"]
+
+[node name="Brick3D" type="StaticBody3D"]
+script = ExtResource("1_c8pmn")
+item = SubResource("Resource_m2u2t")
+canMove = true
+metadata/_custom_type_script = "uid://ccadf7dmxghkm"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_c8pmn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material = SubResource("StandardMaterial3D_nsb83")

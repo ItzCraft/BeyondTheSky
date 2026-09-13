@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=3 format=3 uid="uid://g270a6c6hoo1"]
+
+[ext_resource type="Script" uid="uid://drlmgulwbjwqu" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1_5od75"]
+[ext_resource type="Resource" uid="uid://crgpdahjaj" path="res://addons/func_godot/fgd/func_godot_fgd.tres" id="1_m2viy"]
+
+[resource]
+script = ExtResource("1_5od75")
+fgd_name = "BeyondTheSky"
+base_fgd_files = Array[Resource]([ExtResource("1_m2viy")])
+metadata/_custom_type_script = "uid://drlmgulwbjwqu"
